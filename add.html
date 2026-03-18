@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Restaurant</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Add New Restaurant</h1>
+
+        <form id="restaurantForm">
+
+            <input type="text" id="name" placeholder="Restaurant name" required>
+
+            <input type="text" id="food" placeholder="Food type (Mandhi, Burgers...)" required>
+
+            <input type="text" id="cuisine" placeholder="Cuisine (Indian, Arabian...)" required>
+
+
+            <input type="number" id="rating" 
+                   min="1" max="5" step="0.1" 
+                   placeholder="Rating (1-5)" required>
+            <select id="veg_type" required>
+                <option value="">Select Veg Type</option>
+                <option value="Veg">Veg</option>
+                <option value="Non-Veg">Non-Veg</option>
+            </select>
+
+            <!-- Better as dropdown -->
+            <select id="price_range" required>
+                <option value="">Select Price Range</option>
+                <option value="Below 200">Below 200</option>
+                <option value="200-500">200-500</option>
+                <option value="Above 500">Above 500</option>
+            </select>
+
+            <!-- NEW FIELDS -->
+            <label>Opening Time:</label>
+            <input type="time" id="opening_time" required>
+
+            <label>Closing Time:</label>
+            <input type="time" id="closing_time" required>
+
+            <input type="text" id="location" placeholder="Location" required>
+            <input type="url" id="map_link" placeholder="Google map link" required>
+
+            <button type="submit">+ Add Restaurant</button>
+
+        </form>
+    </div>
+
+    <script src="add.js"></script>
+<img src="logo bg.png" class="floating-logo" alt="FoodSense Logo">
+
+</body>
+</html>

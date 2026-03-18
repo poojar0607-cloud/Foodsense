@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FoodSense – Search</title>
+  <link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+<div class="page">
+  <div class="layout">
+
+    <!-- RESULTS -->
+    <div class="results">
+
+
+      <!-- 🔥 Dynamic Results Will Come Here -->
+      <div id="resultsContainer"></div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <button class="explore">Explore More</button>
+      <button onclick="filterFood('Burgers')">Burgers</button>
+      <button onclick="filterFood('Biriyani')">Biriyani</button>
+      <button onclick="filterFood('Shawarma')">Shawarma</button>
+      <button onclick="filterFood('Desserts')">Desserts</button>
+
+      <a href="add.html" class="add-location-link">
+        ➕ Add New Location
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<img src="logo bg.png" class="corner-logo" alt="FoodSense Logo">
+
+<script src="search.js"></script>
+
+</body>
+</html>

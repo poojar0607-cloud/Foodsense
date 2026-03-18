@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #3a3a3a, #000);
+  color: white;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.layout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* TITLE */
+.search-title {
+  color: #6aa9ff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* RESULTS CONTAINER */
+.results {
+  width: 60%;
+}
+
+/* ============================= */
+/* RESULT CARD (WHITE OVAL BOX) */
+/* ============================= */
+
+.result-card {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 20px 25px;
+  margin: 20px 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  color: black;
+  transition: 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Header */
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Arrow + Rating section (left side) */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Arrow */
+.arrow {
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+/* Rating */
+.rating {
+  color: #28a745;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Restaurant name */
+.restaurant-name {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ============================= */
+/* HIDDEN DETAILS SECTION */
+/* ============================= */
+
+.hidden-content {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #444;
+  border-top: 1px solid #ddd;
+  padding-top: 12px;
+}
+
+/* Info row (Arabian, Non-Veg, Mandhi) */
+.info-row {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Directions button */
+.direction-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.direction-btn:hover {
+  background: #e60000;
+}
+
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.sidebar {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar button {
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.sidebar button:hover {
+  background: #ddd;
+}
+
+.explore {
+  font-size: 16px;
+  padding: 12px;
+  font-weight: bold;
+}
+
+/* Bottom corner logo */
+.corner-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: auto;
+}
+
+/* Add location link */
+.add-location-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #4da3ff;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-location-link:hover {
+  text-decoration: underline;
+}
+/* Inner oval structure */
+.oval-box {
+  background: #f1f1f1;
+  border-radius: 25px;
+  padding: 15px 20px;
+  margin-top: 10px;
+}
+
+/* Row inside oval */
+.oval-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Cuisine (left side) */
+.cuisine {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Open status (center) */
+.open-status {
+  color: green;
+  font-weight: bold;
+}
+
+/* Food type (right side) */
+.food-type {
+  font-weight: 600;
+}
+.center-btn {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.direction-btn {
+  display: inline-block;
+  padding: 6px 18px;
+  background: #ff5a5f;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}

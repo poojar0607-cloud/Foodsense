@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #1f1f1f, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    color: #4ea1ff;
+    margin-bottom: 30px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Inputs + Select + Time */
+input,
+select {
+    width: 400px;
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background-color: #e6e6e6;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Time input cursor fix */
+input[type="time"] {
+    cursor: pointer;
+}
+
+/* Dropdown arrow styling fix */
+select {
+    cursor: pointer;
+}
+
+/* Labels for time */
+label {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: -10px;
+    width: 400px;
+    text-align: left;
+}
+
+/* Button */
+button {
+    width: 400px;
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(to right, #4ea1ff, #3b82f6);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.floating-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;   /* Adjust size if needed */
+  opacity: 0.9;
+  z-index: 999;
+}
+
